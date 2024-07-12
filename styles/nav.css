@@ -1,0 +1,95 @@
+nav {
+    padding: 1rem 2rem;
+    background-color: var(--background);
+}
+
+#nav__container {
+    display: block;
+}
+
+#nav__user__container {
+    display: flex;
+    align-items: center;
+    float: left;
+}
+
+#nav__user__icon__container {
+    background-color: var(--icon-background);
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    margin-right: 0.75rem;
+}
+
+#nav__user__char {
+    font-family: "Ribeye";
+    font-size: 1.75rem;
+    color: var(--text);
+}
+
+#nav__user__username {
+    font-family: "Poppins";
+    color: var(--text);
+    font-size: 1rem;
+}
+
+#nav__pages__container {
+    float: right;
+    font-family: "Poppins";
+}
+
+.nav__pages__link {
+    margin: 0 2rem;
+    font-size: 1rem;
+    text-decoration: none;
+    color: var(--text50);
+    transition: all 0.4s;
+}
+
+.nav__pages__link:first-of-type {
+    margin-left: 0;
+}
+
+.nav__pages__link:last-of-type {
+    margin-right: 0;
+}
+
+.nav__pages__link:hover {
+    color: var(--icon-background);
+}
+
+.nav__pages__link__selected {
+    border-bottom: solid 0.2rem var(--text);
+    color: var(--text);
+    font-weight: bold;
+    transition: all 0.4s;
+}
+
+.nav__pages__link__selected:hover {
+    border-bottom: solid 0.2rem var(--icon-background);
+    color: var(--icon-background);
+}
+
+@media (max-width: 1000px) {
+    .nav__pages__link {
+        margin: 0 0.25rem;
+    }
+}
+
+@media (max-width: 700px) {
+    #nav__user__container {
+        display: none;
+    }
+
+    #nav__pages__container {
+        float: unset;
+    }
+
+    #nav__container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}

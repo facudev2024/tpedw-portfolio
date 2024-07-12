@@ -1,0 +1,55 @@
+footer {
+    background-color: var(--background);
+    display: block;
+    padding: 1rem 2rem;
+    border-top: solid 0.2rem var(--boundary);
+}
+
+#footer__pages__container {
+    float: left;
+}
+
+.footer__pages__link {
+    font-family: "Poppins";
+    text-decoration: none;
+    color: var(--text50);
+    margin: 0 .5rem;
+    transition: all 0.4s;
+}
+
+.footer__pages__link:first-of-type {
+    margin-left: 0;
+}
+
+.footer__pages__link:last-of-type {
+    margin-right: 0;
+}
+
+.footer__pages__link:hover {
+    opacity: 0.5;
+    font-style: italic;
+}
+
+.footer__copyright {
+    font-size: 1rem;
+    font-family: "Poppins";
+    color: var(--text80);
+    float: right;
+}
+
+@media (max-width: 700px) {
+    #footer__pages__container {
+        float: unset;
+    }
+
+    .footer__copyright {
+        float: unset;
+    }
+
+    #footer__container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}

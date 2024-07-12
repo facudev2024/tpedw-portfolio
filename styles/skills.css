@@ -1,0 +1,138 @@
+main {
+    background-color: var(--background);
+}
+
+#main__container {
+    display: flex;
+    justify-content: center;
+    font-family: "Poppins";
+    margin: 0 2rem 0.5rem 2rem;
+}
+
+#main__left__container {
+    margin-right: 2rem;
+}
+
+#main__left__container h2 {
+    color: var(--text);
+    font-size: 1.5rem;
+    margin-bottom: 0.75rem;
+}
+
+.main__left__skill__container {
+    display: flex;
+    align-items: start;
+    margin-bottom: 0.5rem;
+}
+
+.main__left__skill__container img {
+    width: 4rem;
+}
+
+.main__left__skill__container:last-of-type {
+    margin-bottom: 0;
+}
+
+.main__left__text__container {
+    margin-left: 1rem;
+    max-width: 30rem;
+}
+
+#main__left__container h3 {
+    color: var(--text80);
+    font-size: 1rem;
+}
+
+#main__left__container p {
+    color: var(--text50);
+    font-size: 0.9rem;
+}
+
+#main__right__container {
+    width: 20rem;
+}
+
+#bar__container {
+    display: grid;
+    margin-bottom: 0.25rem;
+}
+
+#bar__container:last-of-type {
+    margin-bottom: 0;
+}
+
+#bar__text__container {
+    color: var(--text80);
+    display: block;
+}
+
+.bar__text__left {
+    font-weight: bold;
+    font-size: 0.85rem;
+    float: left;
+}
+
+.bar__text__right {
+    font-size: 0.85rem;
+    float: right;
+}
+
+#bar__meter__container {
+    border: solid 0.2rem var(--canvas);
+    border-radius: 1rem;
+    height: 1.5rem;
+    padding: 0.25rem;
+    width: 100%;
+}
+
+.bar__meter {
+    height: 100%;
+    width: 50%;
+    border-radius: 1rem;
+    background-color: var(--icon-background);
+}
+
+.bar__meter__html {
+    width: 100%;
+}
+
+.bar__meter__css {
+    width: 85%;
+}
+
+.bar__meter__js {
+    width: 80%;
+}
+
+.bar__meter__csharp {
+    width: 75%;
+}
+
+.bar__meter__sql {
+    width: 70%;
+}
+
+.bar__meter__mongo {
+    width: 60%;
+}
+
+@media (max-width: 700px) {
+    #main__container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #main__left__container {
+        margin-right: 0;
+        text-align: center;
+    }
+
+    #main__right__container {
+        margin-top: 1rem;
+        width: 90%;
+    }
+
+    .main__left__skill__container {
+        align-items: center;
+    }
+}

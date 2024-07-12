@@ -1,0 +1,23 @@
+:root {
+    --background: #222222;
+    --text: #ffffff;
+    --text50: #ffffff80;
+    --text80: #ffffffcc;
+    --icon-background: #007ced;
+    --boundary: #333333;
+    --canvas: #444444;
+    --header_background: #252525;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+body {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    height: 100vh;
+}
